@@ -135,6 +135,7 @@ html{
 .hero{
     background-color: var(--secondary-background-color);
     color: var(--title-text-color);
+    text-align: center;
 }
 
 .hero .container{
@@ -149,6 +150,8 @@ html{
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .button{
@@ -159,6 +162,13 @@ html{
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
+}
+
+.hero .button{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
 }
 
 /* Секция преимущество */
