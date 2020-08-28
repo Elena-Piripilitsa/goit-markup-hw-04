@@ -179,16 +179,43 @@ html{
     text-align: center;
 }
 
+.is-hidden{
+    display: none;
+}
+
 .feature-title{
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .section-item{
     color: var(--secondary-text-color);
     line-height: 1.71;
 }
+
+.feature .container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.feature-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.feature-list-item{
+    width: calc((100%-3*30)/4);
+}
+
 
 /* Секция команда */
 .team{
