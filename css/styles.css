@@ -50,16 +50,14 @@ body{
     display: block;
 }
 
-.flexbox{
+.page-header .container{
     display: flex;
-}
-
-.page-header .flexbox{
     align-items: center;
     justify-content: flex-end;
 }
 
 /* Логотип */
+
 .logo{
     font-family: 'Raleway', sans-serif;
     color: var(--primary-text-color);
@@ -67,7 +65,6 @@ body{
 	font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    /* margin-right: 93px; */
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -75,7 +72,6 @@ body{
 .logo > span{
     color: var(--accent-color);
 }
-
 
 /* Навигация */
 
@@ -201,7 +197,8 @@ body{
     margin: 0;
 }
 
-.feature-list-item:not(:last-child){
+.feature-list-item:not(:last-child),
+.service-item:not(:last-child){
     margin-right: 30px;
 }
 
@@ -213,17 +210,16 @@ body{
 
 .service-list{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 94px;
 }
 
-.service-item:not(:last-child){
-    margin-right: 30px;
-}
-
-.service .section-title{
+.service .section-title,
+.team .section-title{
     margin-top: 0;
     margin-bottom: 50px;
 }
+
 
 /* Секция -наша команда */
 .team{
@@ -242,11 +238,6 @@ body{
 
 .team-card:not(:last-child){
     margin-right: 30px;
-}
-
-.team .section-title{
-    margin-top: 0;
-    margin-bottom: 50px;
 }
 
 .team-card  .subtitle{
@@ -305,10 +296,6 @@ body{
 
 .location{
     margin: 0;  
-}
-
-.page-footer .auth-nav{
-    /* display: inline-block; */
 }
 
 /* ПОРТФОЛИО */
