@@ -138,13 +138,10 @@ body{
     background-position: center;
     background-size: cover;
     text-align: center;
+    height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.hero .container{
-    padding: 200px 0px;
 }
 
 .hero-title{
@@ -153,9 +150,9 @@ body{
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
-    margin: 0px 0px 30px;
+    margin-bottom: 30px;
+    padding-top: 200px;
 }
 
 .button{
@@ -165,7 +162,6 @@ body{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    text-align: center;
 }
 
 .hero .button{
@@ -199,8 +195,6 @@ body{
     background: var(--accessorial-background-color);
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: auto;
-    padding-bottom: auto;
     margin-bottom: 30px;
 }
 
@@ -210,8 +204,6 @@ body{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin: 0px 0px 10px;
-    /* margin-bottom: 10px; */
 }
 
 .section-item{
@@ -239,6 +231,10 @@ body{
     width: calc((100%-3*30)/4);
 }
 
+.subtitle{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 /* Чем мы занимаемся */
 
 .service-list{
@@ -277,10 +273,12 @@ body{
     flex-wrap: wrap;
 }
 
+.team-photo{
+    margin-bottom: 30px;
+}
+
 .team-card  .subtitle{
     font-weight: 500;
-    margin: 0px 0px 10px;
-    padding-top: 30px;
 }
 
 .team .section-item{
@@ -309,7 +307,6 @@ body{
     align-items: center;
     width: 44px;
     height: 44px;
-    padding: 12px;
     border: transparent;
     border-radius: 50%;
 }
@@ -385,7 +382,7 @@ padding: 94px 0px;
     display: flex;
     padding: 60px 0px;
 }
-
+ 
 .page-footer .logo{
     display: inline-block;
     margin-bottom: 20px;
@@ -401,9 +398,11 @@ padding: 94px 0px;
 
 .footer-auth-nav .link{
     display: inline-block;
-    margin-top: 9px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+}
+.footer-auth-nav-item{
+    margin-top: 9px;
 }
 
 .location,
@@ -415,11 +414,8 @@ padding: 94px 0px;
 
 .footer-title{
     color: var(--title-text-color);
+    margin-top: 12px;
     margin-bottom: 20px;
-}
-
-.section-subscription{
-    padding-top: 12px;
 }
 
 .section-address{
