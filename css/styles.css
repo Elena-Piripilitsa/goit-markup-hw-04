@@ -348,8 +348,7 @@ padding: 94px 0px;
     justify-content: center;
 }
 
-.client-list .client-item:not(:last-child),
-.client-card:not(:last-child){
+.client-list .client-item:not(:last-child){
     margin-right: 30px;
 }
 
